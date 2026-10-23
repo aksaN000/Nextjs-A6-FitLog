@@ -1,10 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
   reactCompiler: true,
+  images: {
+    // workout illustrations come from the FitLog API
+    remotePatterns: [{ protocol: "https", hostname: "img.magnific.com" }],
+  },
   turbopack: {
     rules: {
       "*.css": {
