@@ -22,7 +22,7 @@ export default function PlanCard({ workout, list, done }: Props) {
 
   const handleRemove = () => {
     removeFromList(list, workout.id);
-    toast(`${workout.name} removed`, { icon: "🗑️" });
+    toast.success(`${workout.name} removed from the list`);
   };
 
   return (
