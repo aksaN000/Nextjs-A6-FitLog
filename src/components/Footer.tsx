@@ -9,7 +9,7 @@ export default function Footer() {
           <span className="font-display text-lg font-bold tracking-wider">FITLOG</span>
         </div>
         <p className="text-sm text-muted">
-          © 2026 FitLog - Workout Library. Train hard, log honest.
+          © 2026 FitLog | Workout Library. Train hard, log honest.
         </p>
       </div>
     </footer>
