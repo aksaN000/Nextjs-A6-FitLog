@@ -30,7 +30,6 @@ export default function Navbar() {
         <NavBadges />
       </nav>
 
-      {/* on small screens the links move to their own row so they stay easy to tap */}
       <div className="flex justify-center gap-1 border-t border-line px-4 py-2 md:hidden">
         <Links />
       </div>

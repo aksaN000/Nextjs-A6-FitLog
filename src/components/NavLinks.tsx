@@ -10,7 +10,6 @@ export const NAV_LINKS = [
 
 function isActive(pathname: string | null, href: string) {
   if (!pathname) return false;
-  // detail pages belong to the Workout library
   if (href === "/") return pathname === "/" || pathname.startsWith("/workouts");
   return pathname.startsWith(href);
 }

@@ -35,9 +35,7 @@ function setState(next: PlanState) {
   state = next;
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  } catch {
-    // storage full or blocked: keep the in-memory state
-  }
+  } catch {}
   listeners.forEach((listener) => listener());
 }
 
@@ -51,7 +49,6 @@ function getSnapshot() {
   return state;
 }
 
-// the server has no localStorage, so it always renders the empty plan
 function getServerSnapshot() {
   return EMPTY;
 }

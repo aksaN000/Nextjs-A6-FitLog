@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   reactCompiler: true,
   images: {
-    // workout illustrations come from the FitLog API
     remotePatterns: [{ protocol: "https", hostname: "img.magnific.com" }],
   },
   turbopack: {
