@@ -20,7 +20,7 @@ export default function SortDropdown({ value, onChange }: Props) {
   };
 
   return (
-    <details ref={detailsRef} className="dropdown dropdown-end">
+    <details ref={detailsRef} className="dropdown sm:dropdown-end">
       <summary className="btn btn-sm h-10 gap-2 rounded-full border-line bg-base-200 px-4 font-semibold">
         <span className="text-muted">Sort By:</span> {value}
         <FiChevronDown className="size-4" />
