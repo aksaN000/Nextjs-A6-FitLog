@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
+import NavBadges from "./NavBadges";
 import NavLinks, { NavLinkItems } from "./NavLinks";
 
 function Links() {
@@ -26,7 +27,7 @@ export default function Navbar() {
           <Links />
         </div>
 
-        <div className="w-24" />
+        <NavBadges />
       </nav>
 
       {/* on small screens the links move to their own row so they stay easy to tap */}
